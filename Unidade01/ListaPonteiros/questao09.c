@@ -1,4 +1,3 @@
-#include <stdio.h>
 //p = mat + 1; // VÁLIDA: p vai guardar o endereço do segundo elemento
 //p = mat++; // INVÁLIDA: não é possível modificar o valor de mat
 //p = ++mat; // INVÁLIDA: não é possível modificar o valor de mat
