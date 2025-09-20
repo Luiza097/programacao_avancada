@@ -99,24 +99,44 @@ int main()
     idade = *p5;
     printf("%d \n", idade);
     // SAÍDA: 45
+    // O ponteiro p4 (que aponta para vetor[0]) é incrementado em 1.
+    // Como p4 é um ponteiro para int, a aritmética de ponteiros o avança
+    // para o próximo int na memória, que é vetor[1]. 
+    //O valor 45 é atribuído a idade.
+
     /* (j) */
     p4 = p5 + 1;
     idade = *p4;
     printf("%d \n", idade);
     // SAÍDA: 27
+    // O ponteiro p5 (que aponta para vetor[1]) é incrementado em 1.
+    // O ponteiro p4 recebe esse novo endereço, que corresponde a vetor[2].
+    // O valor 27 é atribuído a idade.
+
     /* (l) */
     p4 = p4 - 2;
     idade = *p4;
     printf("%d \n", idade);
     // SAÍDA: 31
+    //O ponteiro p4 (que aponta para vetor[2]) é decrementado em 2.
+    // O ponteiro retrocede duas posições de int, retornando para o
+    // endereço de vetor[0]. O valor 31 é atribuído a idade.
+
     /* (m) */
     p5 = &vetor[2] - 1;
     printf("%d \n", *p5);
     // SAÍDA: 45
+    //O ponteiro p5 recebe o endereço de vetor[2] - 1. 
+    // Isso faz com que p5 aponte para o endereço do elemento anterior,
+    // vetor[1]. A expressão *p5 acessa o valor 45.
+
     /* (n) */
     p5++;
     printf("%d \n", *p5);
     //SAÍDA: 27
+    // O ponteiro p5 (que aponta para vetor[1]) é incrementado em 1.
+    // Ele avança para a próxima posição de int, que é o endereço
+    // de vetor[2]. A expressão *p5 acessa o valor 27.
     return (0);
     
 }
