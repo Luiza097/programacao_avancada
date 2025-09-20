@@ -13,7 +13,6 @@ int main(){
     printf("y:%d, y+1: %d, y+2: %d, y+3=%d\n",y, y+1, y+2, y+3);
     printf("z:%d, z+1: %d, z+2: %d, z+3=%d\n",z, z+1, z+2, z+3);
     printf("h:%d, h+1: %d, h+2: %d, h+3=%d\n",x, x+1, x+2, x+3);
-
 }
 
 /*
